@@ -128,6 +128,7 @@ link:hover, link:focus {
 
 .header-link-addresses{
     color: var(--base-color-grey, #757575);
+    fill: var(--base-color-grey, #757575);;
     margin-inline: 25px;
     font-size: 14px; 
     font-weight: 500; 
@@ -145,7 +146,8 @@ link:hover, link:focus {
 }
 
 .header-link-addresses:hover, .header-link-addresses:focus {
-    color: var(--base-color-blue, #2196F3); 
+    color: var(--base-color-blue, #2196F3);
+    fill: var(--base-color-blue, #2196F3);
 }
 
 .header-layout{
