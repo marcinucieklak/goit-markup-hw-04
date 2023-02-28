@@ -1,0 +1,451 @@
+/* Zadanie domowe studentów #3 */
+
+/*normalizator stylów */
+@import 'node_modules/modern-normalize/modern-normalize.css';
+/*czciąki */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --base-color-blue: #2196F3;
+    --base-color-black: #000000;
+    --base-color-white: #FFFFFF;
+    --base-color-darck-grey:#212121;
+    --base-color-darck-grey-two: #2F303A;
+    --base-color-grey:#757575;
+    --base-color-pale: rgba(255, 255, 255, 0.6);
+    --base-color-ligth-one: #E5E5E5;
+    --base-color-ligth-two: #F5F4FA;
+    --base-color-ligth-tree: #EEEEEE;
+    --base-color-ligth-four: #ECECEC;
+}
+
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    background-color: var(--base-color-white, #FFFFFF);
+    color: var(--base-color-black, #000000);
+    width: 1600px;
+}
+
+header {
+    background-color: var(--base-color-white, #FFFFFF);
+    width: 1600px;
+    height: 80px;
+    border-bottom-color: var(--base-color-ligth-tree, #EEEEEE);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+footer {
+    background-color:var(--base-color-darck-grey-two, #2F303A); 
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    width: 1600px;
+    height: 252px;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section{
+  box-sizing: border-box;
+  padding-top: 94px;
+  padding-bottom: 94px; 
+}
+
+.section-four-paragraph{
+        box-sizing: border-box;
+        padding-top: 94px;
+}
+ 
+/* wyjątek - wymuszenie usunięcia przerwy pomiędzy elementami liniowymi*/
+.no-gap { 
+    margin-left: -6px;        
+}
+
+
+
+.link {
+    text-decoration: none;
+}
+
+link:hover, link:focus {
+   color: var(--base-color-blue, #2196F3);  
+}
+
+.header-link-navigation {
+    color: var(--base-color-darck-grey, #212121);
+    margin-inline: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left
+}
+
+.header-link-navigation:first-of-type{
+    margin-left: 0px;
+}
+
+.header-link-navigation:last-of-type{
+    margin-right: 0px;
+}
+
+/* docelowo portfolio .header-link-navigation:visited */
+.header-link-navigation-selected {
+    color: var(--base-color-blue, #2196F3);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: left
+}
+
+
+.header-link-navigation:hover, .header-link-navigation:focus {
+    color: var(--base-color-blue, #2196F3);
+}
+
+.header-link-addresses{
+    color: var(--base-color-grey, #757575);
+    margin-inline: 25px;
+    font-size: 14px; 
+    font-weight: 500; 
+    line-height: 1.1; 
+    letter-spacing: 0.02em; 
+    text-align: left;
+}
+
+.header-link-addresses:first-of-type {
+    margin-left: 0px
+}
+
+.header-link-addresses:last-of-type {
+    margin-right: 0px
+}
+
+.header-link-addresses:hover, .header-link-addresses:focus {
+    color: var(--base-color-blue, #2196F3); 
+}
+
+.header-layout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    padding-top: 24px;
+    padding-left: 15px;
+    padding-right: 94px; 
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left; 
+    }
+
+
+.header-logo-web {
+    font-family: Raleway;
+    color: var(--base-color-blue, #2196F3);
+}
+
+.header-logo-studio {
+    color:var(--base-color-black, #000000);
+    font-family: Raleway;
+}
+
+.header-navigation {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+
+
+.header-addresses {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 32px;
+
+}
+
+.section-topmain {
+    background-color: var(--base-color-darck-grey-two, #2F303A);
+    margin: 0;
+    box-sizing:border-box;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.title-one {
+    color: var(--base-color-white, #FFFFFF);
+    margin: 0;
+    text-align: center;    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.button-topmain {
+    width: 200px;
+    height: 50px;
+    background: var(--base-color-blue, #2196F3);
+    color: var(--text-color-four, #FFFFFF);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.section-list { 
+    display: flex;
+    justify-content: space-between; 
+    list-style-type: none;
+} 
+
+.portfolio-list{
+    margin: 0;
+    display: grid;
+    grid: auto / auto auto auto;
+    grid-gap: 30px;
+    list-style-type: none;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.title-tree {
+    color: var(--base-color-darck-grey, #212121);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-transform: uppercase;    
+}
+
+.text-fourpharagraf {
+    height: 75px;
+    width: 270px;
+    border-radius: nullpx;
+    color: var(--base-color-grey, #757575);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;   
+}
+    
+.title-two {
+    color: var(--base-color-darck-grey, #212121);
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 50px;
+}  
+        
+.background-ourteam {
+    background-color: var(--base-color-ligth-two, #F5F4FA); 
+}
+
+.photo-box {
+    background-color: var(--base-color-white, #FFFFFF);
+    height: 368px;
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+    
+.title-four {
+    color: var(--base-color-darck-grey, #212121);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.text-photo {
+    color: var(--base-color-grey, #757575);
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.footer-layout{
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.footer-logo-web {
+    font-family: Raleway;
+    color: var(--base-color-blue, #2196F3);
+}
+
+.footer-logo-studio {
+    color: var(--base-color-white, #FFFFFF);
+    font-family: Raleway;
+}
+
+.footer-address {
+    display: block;
+    color: var(--base-color-white, #FFFFFF);
+    padding-left: 15px;
+    padding-bottom: 9px;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+
+.footer-mail {
+    display: block;
+    padding-left: 15px;
+    padding-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--base-color-pale, rgba(255, 255, 255, 0.6));
+}
+
+.footer-phone {
+    display: block;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--base-color-pale, rgba(255, 255, 255, 0.6));
+}
+
+.subsection-fivebuttons {
+    display:flex;
+    justify-content: center;
+}
+
+.button-portfolio {
+    border-style: none;
+    padding: 8px 22px;
+    margin-inline: 4px;
+    background: var(--base-color-ligth-two, #F5F4FA);
+    color: var(--text-color-two, #212121);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.button-portfolio:first-child {
+        margin-left: 0px;
+        margin-right: 8px;
+}
+
+.button-portfolio:last-child {
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
+.button-portfolio:hover, .button-portfolio:focus {
+    background: var(--base-color-blue, #2196F3);
+    color: var(--base-color-white, #FFFFFF)
+}
+
+.section-firstraw {
+    padding-top: 30px;
+    text-align: left;
+}
+
+.section-middleraw {
+    padding-top: 30px;
+    text-align: left;
+}
+
+.section-lastraw {
+    padding-top: 30px;
+    padding-bottom: 94px;
+    text-align: left;
+}
+    
+
+.portfolio-photo-box {
+    background-color: var(--base-color-white, #FFFFFF);
+    box-sizing: border-box;
+    height: 404px;
+    width: 372px;
+    border-color: var(--base-color-ligth-tree,#EEEEEE);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.portfolio-title-four {
+    color: var(--base-color-darck-grey, #212121);
+    margin: 0px;
+    text-indent: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.portfolio-text-photo {
+    color: var(--base-color-grey, #757575);
+    margin: 0px;
+    text-indent: 20px;
+    padding-top: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+            
+
+
+
+
+
+        
+       
+    
+
+    
+

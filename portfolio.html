@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="Zadanie domowe studentów #2 Main Page"
+        />
+        <title>Zadanie domowe GOIT Polska</title>
+        <!-- Tutaj znajduje się link do normalizotora stylów !!!Uwaga zawsze przed własnyn arkuszem stylów -->
+        <link
+            rel="stylesheet"
+            href="node_modules/modern-normalize/modern-normalize.css"
+        />
+
+        <!-- Tutaj znajduje się link do arkusza stylów -->
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- Tutaj znajdują się ;inki do czcionek  https://fonts.googleapis.com-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- Raleway:wght@700-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Roboto:wght@400;500;700;900-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="container header-layout">
+                <!-- Tutaj znajduje się nagłówek strony -->
+                <div>
+                    <a href="index.html" class="link header-logo">
+                        <span class="header-logo-web">Web</span>
+                        <span class="header-logo-studio no-gap">Studio</span>
+                    </a>
+                    <nav class="header-navigation">
+                        <!-- Nawigacja do innych stron -->
+                        <a href="#" class="link header-link-navigation"
+                            >Agencja</a
+                        >
+                        <a
+                            href="portfolio.html"
+                            class="link header-link-navigation-selected"
+                            >Portfolio</a
+                        >
+                        <a href="#" class="link header-link-navigation"
+                            >Kontakt</a
+                        >
+                    </nav>
+                </div>
+                <!-- Dane adresowe  -->
+                <div class="header-addresses">
+                    <!-- Link do adresu e-mail  -->
+                    <a
+                        href="maailto:info@devstudio.com"
+                        class="link header-link-addresses"
+                        >info@devstudio.com</a
+                    >
+                    <!-- Link do numeru telefonu -->
+                    <a
+                        href="tel:+48111111111"
+                        class="link header-link-addresses"
+                        >+48 111 111 111</a
+                    >
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <!-- 5 PRZYCISKÓW -->
+            <section class="section">
+                <div class="subsection-fivebuttons">
+                    <button type="button" class="button-portfolio">
+                        Wszystkie
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Strony
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Aplikacje
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Dizajn
+                    </button>
+                    <button type="button" class="button-portfolio">
+                        Marketing
+                    </button>
+                </div>
+
+                <!-- first picture raw -->
+                <ul class="portfolio-list">
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_technocrack.jpg"
+                                alt="Laptop with web page on the sreen"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">Technocrack</h4>
+                            <p class="portfolio-text-photo">
+                                Strona internetowa
+                            </p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_new_orlean_vs_golden_star.jpg"
+                                alt="Two bascketball players fighting in the air under the basket"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">
+                                Grafika New Orlean vs Golden Star
+                            </h4>
+                            <p class="portfolio-text-photo">Dizajn</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_restaurant_seafood.jpg"
+                                alt="Logo of seafood restaurant with the trout"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">
+                                Restauracja Seafood
+                            </h4>
+                            <p class="portfolio-text-photo">Aplikacja</p>
+                        </div>
+                    </li>
+
+                    <!-- middle picture raw -->
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_headphones.jpg"
+                                alt="Black headphones on a white background"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">Projekt Prime</h4>
+                            <p class="portfolio-text-photo">Marketing</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_project_boxes.jpg"
+                                alt="Two cardboard boxes on a white background"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">Projekt Boxes</h4>
+                            <p class="portfolio-text-photo">Aplikacja</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_monitor_inspiration_has_no_borders.jpg"
+                                alt="A monitor displaying a quote inspiration has no limits"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">
+                                Inspiration has no Borders
+                            </h4>
+                            <p class="portfolio-text-photo">
+                                Strona internetowa
+                            </p>
+                        </div>
+                    </li>
+                    <!--last picture raw -->
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_limited_edition_magazine.jpg"
+                                alt="Limited edition magazine unfolded"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">
+                                Magazyn Limited Edition
+                            </h4>
+                            <p class="portfolio-text-photo">Dizajn</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_lab_project.jpg"
+                                alt="Pendant with the inscription LAB EL TAG"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">Projekt LAB</h4>
+                            <p class="portfolio-text-photo">Marketing</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-photo-box">
+                            <img
+                                src="images/portfolio_laptop_growing_business.jpg"
+                                alt="Close up image of programer working on his laptop displaying a quote growing business"
+                                width="370"
+                                height="294"
+                            />
+                            <h4 class="portfolio-title-four">
+                                Growing Business
+                            </h4>
+                            <p class="portfolio-text-photo">Aplikacja</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="container footer-layout">
+                <!-- Tutaj znajduje się stopka strony -->
+                <a href="index.html" class="footer-logo link">
+                    <span class="footer-logo-web">Web</span>
+                    <span class="footer-logo-studio no-gap">Studio</span>
+                </a>
+                <div>
+                    <!-- Adress  -->
+                    <address class="footer-address">
+                        m. Warszawa, Aleje Jerozolimskie 21
+                    </address>
+
+                    <!-- Link do adresu e-mail  -->
+                    <a href="mailto:info@devstudio.com" class="link footer-mail"
+                        >info@devstudio.com</a
+                    >
+
+                    <!-- Link do numeru telefonu -->
+                    <a href="tel:+48111111111" class="link footer-phone"
+                        >+48 111 111 111</a
+                    >
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
