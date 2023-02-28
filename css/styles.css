@@ -54,7 +54,7 @@ footer {
     box-sizing: 1;
 }
 
-.icon-enelope:hover,
+.icon-envelope:hover,
 .icon-envelope:focus{
 fill: var(--base-color-blue, #2196F3);
 border-color: var(--base-color-blue, #2196F3);
