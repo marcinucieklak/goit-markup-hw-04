@@ -44,6 +44,15 @@ footer {
     height: 252px;
 }
 
+.icon{
+    height: 20px;
+    width: 20px;
+    margin: 0 auto;
+    fill: #000000;
+    border-style: solid;
+    border-color: #000000;
+    box-sizing: 1;
+}
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -174,8 +183,12 @@ link:hover, link:focus {
 
 .section-topmain {
     background-color: var(--base-color-darck-grey-two, #2F303A);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/class.jpg");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;    
     margin: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
