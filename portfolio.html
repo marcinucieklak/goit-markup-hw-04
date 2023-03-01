@@ -55,19 +55,36 @@
                     </nav>
                 </div>
                 <!-- Dane adresowe  -->
-                <div class="header-addresses">
+                <div>
                     <!-- Link do adresu e-mail  -->
-                    <a
-                        href="maailto:info@devstudio.com"
-                        class="link header-link-addresses"
-                        >info@devstudio.com</a
-                    >
-                    <!-- Link do numeru telefonu -->
-                    <a
-                        href="tel:+48111111111"
-                        class="link header-link-addresses"
-                        >+48 111 111 111</a
-                    >
+                    <div class="header-addresses">
+                        <a
+                            href="maailto:info@devstudio.com"
+                            class="link header-link-addresses"
+                        >
+                            <svg class="icon-envelope">
+                                <use
+                                    xlink:href="images/icons.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </div>
+                    <div class="header-addresses">
+                        <!-- Link do numeru telefonu -->
+
+                        <a
+                            href="tel:+48111111111"
+                            class="link header-link-addresses"
+                        >
+                            <svg class="icon-smartphone">
+                                <use
+                                    xlink:href="images/icons.svg#icon-smartphone"
+                                ></use>
+                            </svg>
+                            +48 111 111 111</a
+                        >
+                    </div>
                 </div>
             </div>
         </header>
@@ -230,27 +247,75 @@
             </section>
         </main>
         <footer>
-            <div class="container footer-layout">
-                <!-- Tutaj znajduje się stopka strony -->
-                <a href="index.html" class="footer-logo link">
-                    <span class="footer-logo-web">Web</span>
-                    <span class="footer-logo-studio no-gap">Studio</span>
-                </a>
-                <div>
-                    <!-- Adress  -->
-                    <address class="footer-address">
-                        m. Warszawa, Aleje Jerozolimskie 21
-                    </address>
+            <!-- Tutaj znajduje się stopka strony -->
+            <div class="container-footer">
+                <div class="footer-box-one">
+                    <a href="index.html" class="footer-logo link">
+                        <span class="footer-logo-web">Web</span>
+                        <span class="footer-logo-studio no-gap">Studio</span>
+                    </a>
+                    <div>
+                        <!-- Adress  -->
+                        <address class="footer-address">
+                            m. Warszawa, Aleje Jerozolimskie 21
+                        </address>
 
-                    <!-- Link do adresu e-mail  -->
-                    <a href="mailto:info@devstudio.com" class="link footer-mail"
-                        >info@devstudio.com</a
-                    >
+                        <!-- Link do adresu e-mail  -->
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="link footer-mail"
+                            >info@devstudio.com</a
+                        >
 
-                    <!-- Link do numeru telefonu -->
-                    <a href="tel:+48111111111" class="link footer-phone"
-                        >+48 111 111 111</a
-                    >
+                        <!-- Link do numeru telefonu -->
+                        <a href="tel:+48111111111" class="link footer-phone"
+                            >+48 111 111 111</a
+                        >
+                    </div>
+                </div>
+
+                <div class="footer-box-two">
+                    <h3 class="footer-title-tree">DOŁĄCZ DO NAS</h3>
+                    <div>
+                        <div class="footer-box-media">
+                            <div class="footer-thumb-media">
+                                <a href="#">
+                                    <svg class="footer-icon-media">
+                                        <use
+                                            xlink:href="images/icons.svg#icon-instagram-2"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer-thumb-media">
+                                <a href="#">
+                                    <svg class="footer-icon-media">
+                                        <use
+                                            xlink:href="images/icons.svg#icon-twitter-1"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer-thumb-media">
+                                <a href="#">
+                                    <svg class="footer-icon-media">
+                                        <use
+                                            xlink:href="images/icons.svg#icon-facebook-1"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="footer-thumb-media">
+                                <a href="#">
+                                    <svg class="footer-icon-media">
+                                        <use
+                                            xlink:href="images/icons.svg#icon-linkedin-1"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
