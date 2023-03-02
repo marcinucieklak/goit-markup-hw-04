@@ -235,9 +235,9 @@ fill: var(--base-color-grey, #757575);
     text-decoration: none;
 }
 
-.link:hover, link:focus {
+.link:hover, .link:focus {
    color: var(--base-color-blue, #2196F3);
-    fill: var(--base-color-blue, #2196F3);
+
 }
 
 .header-link-navigation {
@@ -294,7 +294,14 @@ fill: var(--base-color-grey, #757575);
 }
 
 .header-link-addresses:hover, .header-link-addresses:focus {
-    color: var(--base-color-blue, #2196F3);
+    color: var(--base-color-blue, #2196F3); 
+}
+
+.header-link-addresses:hover > .icon-envelope {
+    fill: var(--base-color-blue, #2196F3);
+}
+
+.header-link-addresses:hover>.icon-smartphone {
     fill: var(--base-color-blue, #2196F3);
 }
 
@@ -338,12 +345,6 @@ fill: var(--base-color-grey, #757575);
     align-content: center;
     align-items: center;
     align-self: center;
-}
-
-.header-addresses:hover, 
-.header-addresses:focus {
-    color: var(--base-color-blue, #2196F3);
-    fill: var(--base-color-blue, #2196F3);
 }
 
 
